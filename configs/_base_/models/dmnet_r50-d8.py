@@ -6,6 +6,8 @@ data_preprocessor = dict(
     std=[58.395, 57.12, 57.375],
     bgr_to_rgb=True,
     pad_val=0,
+    # changed add new line
+    size_divisor=32,
     seg_pad_val=255)
 model = dict(
     type='EncoderDecoder',
@@ -29,6 +31,7 @@ model = dict(
         channels=512,
         filter_sizes=(1, 3, 5, 7),
         dropout_ratio=0.1,
+        # changed 19 -->2
         num_classes=19,
         norm_cfg=dict(type='SyncBN', requires_grad=True),
         align_corners=False,

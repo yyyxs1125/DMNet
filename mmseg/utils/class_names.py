@@ -10,6 +10,16 @@ def cityscapes_classes():
         'person', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle',
         'bicycle'
     ]
+    
+def mydata_classes():
+    return [
+        'traversable', 'non-traversable'
+    ]
+
+def mydata_palette():
+    return [
+        [128, 64, 128], [244, 35, 232]
+    ]
 
 
 def ade_classes():
@@ -510,6 +520,9 @@ dataset_aliases = {
     'hsidrive': [
         'hsidrive', 'HSIDrive', 'HSI-Drive', 'hsidrive20', 'HSIDrive20',
         'HSI-Drive20'
+    ],
+    'my_data': [
+        'mydata', 'mine'
     ]
 }
 
